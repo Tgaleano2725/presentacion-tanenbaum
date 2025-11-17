@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1G",
+    "significado": "Primera generación de telefonía móvil; sistemas analógicos basados en celdas, como AMPS, con baja seguridad y capacidad limitada."
+  },
+  {
+    "id": "2G",
+    "significado": "Segunda generación de telefonía móvil; introduce voz digital, GSM, SMS, autenticación y cifrado, con primeros servicios de datos."
+  },
+  {
+    "id": "3G",
+    "significado": "Tercera generación de telefonía móvil; diseñada para voz y datos de banda ancha, con estándares como UMTS/WCDMA y CDMA2000."
+  },
+  {
+    "id": "4G",
+    "significado": "Cuarta generación; arquitectura totalmente basada en conmutación de paquetes e IP, con LTE como estándar principal y altas velocidades de datos."
+  },
+  {
+    "id": "5G",
+    "significado": "Quinta generación; mejora velocidad y latencia, soporta una cantidad masiva de dispositivos conectados (IoT) y aplicaciones casi en tiempo real."
+  },
+  {
+    "id": "MS",
+    "significado": "Mobile Station – Estación móvil; es el terminal del usuario, el teléfono o dispositivo que se conecta a la red móvil."
+  },
+  {
+    "id": "BTS",
+    "significado": "Base Transceiver Station – Estación base transceptora; antena o estación que se comunica por radio con los móviles dentro de una celda."
+  },
+  {
+    "id": "BSC",
+    "significado": "Base Station Controller – Controlador de estaciones base; coordina varias BTS, gestiona recursos de radio y participa en el handoff."
+  },
+  {
+    "id": "MSC",
+    "significado": "Mobile Switching Center – Centro de conmutación móvil; núcleo de conmutación que enruta llamadas y conecta la red móvil con la PSTN."
+  },
+  {
+    "id": "PSTN",
+    "significado": "Public Switched Telephone Network – Red telefónica pública conmutada; red telefónica fija tradicional basada en conmutación de circuitos."
+  },
+  {
+    "id": "AMPS",
+    "significado": "Advanced Mobile Phone System; sistema celular analógico de primera generación utilizado como ejemplo clásico de 1G."
+  },
+  {
+    "id": "FDMA",
+    "significado": "Frequency Division Multiple Access – Acceso múltiple por división de frecuencia; cada llamada ocupa un canal de frecuencia exclusivo."
+  },
+  {
+    "id": "TDMA",
+    "significado": "Time Division Multiple Access – Acceso múltiple por división en el tiempo; varias llamadas comparten una misma frecuencia en diferentes ranuras de tiempo."
+  },
+  {
+    "id": "GSM",
+    "significado": "Global System for Mobile communications; estándar digital dominante en 2G para voz y servicios básicos de datos."
+  },
+  {
+    "id": "HLR",
+    "significado": "Home Location Register – Registro de ubicación principal; base de datos con la información permanente del abonado y su red de origen."
+  },
+  {
+    "id": "VLR",
+    "significado": "Visitor Location Register – Registro de ubicación visitante; base de datos con la ubicación actual del abonado en el área de un MSC."
+  },
+  {
+    "id": "SMS",
+    "significado": "Short Message Service – Servicio de mensajes cortos; permite el envío de mensajes de texto de baja longitud sobre la red móvil."
+  },
+  {
+    "id": "GPRS",
+    "significado": "General Packet Radio Service; extensión de 2G que introduce conmutación de paquetes y mayores velocidades de datos."
+  },
+  {
+    "id": "EDGE",
+    "significado": "Enhanced Data rates for GSM Evolution; mejora de 2G/GPRS que incrementa las tasas de datos mediante técnicas de modulación más eficientes."
+  },
+  {
+    "id": "UMTS",
+    "significado": "Universal Mobile Telecommunications System; estándar 3G basado en WCDMA para servicios de voz y banda ancha móvil."
+  },
+  {
+    "id": "WCDMA",
+    "significado": "Wideband Code Division Multiple Access; técnica de acceso múltiple de banda ancha usada en 3G para compartir la misma banda de frecuencias mediante códigos."
+  },
+  {
+    "id": "CDMA",
+    "significado": "Code Division Multiple Access; técnica de acceso múltiple donde varios usuarios comparten la misma banda de frecuencia diferenciados por códigos."
+  },
+  {
+    "id": "CDMA2000",
+    "significado": "Familia de estándares 3G basada en CDMA, alternativa a UMTS/WCDMA para servicios de banda ancha móvil."
+  },
+  {
+    "id": "IP",
+    "significado": "Internet Protocol; protocolo de red sobre el que se basan las arquitecturas de datos de 4G y posteriores."
+  },
+  {
+    "id": "LTE",
+    "significado": "Long Term Evolution; estándar principal de 4G, proporciona altas velocidades de datos y baja latencia usando conmutación de paquetes e IP."
+  },
+  {
+    "id": "IoT",
+    "significado": "Internet of Things – Internet de las Cosas; red de dispositivos físicos conectados que intercambian datos a través de Internet."
+  },
+  {
+    "id": "MIMO",
+    "significado": "Multiple-Input Multiple-Output; técnica de antenas múltiples en transmisión y recepción que aumenta capacidad y eficiencia del enlace radio."
+  },
+  {
+    "id": "kbps",
+    "significado": "Kilobits por segundo; unidad de medida de velocidad de transmisión de datos (1 kbps = 1.000 bits por segundo, típicamente)."
+  },
+  {
+    "id": "Mbps",
+    "significado": "Megabits por segundo; unidad de medida de velocidad de transmisión de datos (1 Mbps = 1.000.000 de bits por segundo, típicamente)."
+  },
+  {
+    "id": "Handoff",
+    "significado": "Proceso mediante el cual una llamada o conexión de datos activa se transfiere de una celda (y su BTS) a otra mientras el usuario se mueve, manteniendo la comunicación sin cortes perceptibles."
+  }
+]

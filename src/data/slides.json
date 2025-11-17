@@ -1,0 +1,350 @@
+{
+  "tituloPresentacion": "Sistema de telefonía móvil – Capítulo 2.7",
+  "descripcion": "Presentación basada en el capítulo 2.7 del libro «Comunicaciones y Redes de Computadores» de Andrew S. Tanenbaum.",
+  "slides": [
+    {
+      "id": 1,
+      "title": "Sistema de telefonía móvil – Capítulo 2.7",
+      "imagen": null,
+      "video": null,
+      "bullets": [
+        "Análisis técnico del sistema de telefonía móvil según Tanenbaum.",
+        "Capítulo 2.7 del libro «Comunicaciones y Redes de Computadores».",
+        "Maestría en Gestión de Sistemas Informáticos – Alumno: Tobias González Galeano.",
+        "Módulo: Redes de Comunicación de Datos."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Estructura de la presentación",
+      "imagen": null,
+      "video": null,
+      "bullets": [
+        "Introducción y conceptos básicos de red celular.",
+        "Arquitectura del sistema, canales y handoff.",
+        "Evolución: 1G, 2G, 3G y contexto de 4G y 5G.",
+        "Desafíos técnicos, aportes y conclusiones."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Introducción general",
+      "imagen": null,
+      "video": null,
+      "bullets": [
+        "La telefonía móvil resuelve la limitación de la telefonía fija ligada a una ubicación.",
+        "El sistema celular permite mantener la comunicación mientras el usuario se desplaza.",
+        "Se combinan señales, espectro radioeléctrico y arquitectura de red."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Objetivo del capítulo 2.7",
+      "imagen": null,
+      "video": null,
+      "bullets": [
+        "Explicar el diseño y funcionamiento de un sistema de telefonía móvil.",
+        "Describir red celular y reutilización del espectro.",
+        "Analizar la evolución 1G, 2G y 3G y su impacto en capacidad y calidad de servicio."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Concepto de red celular",
+      "imagen": "5.png",
+      "video": "05.mp4",
+      "bullets": [
+        "El área de cobertura se divide en múltiples celdas (modelo hexagonal).",
+        "Cada celda cuenta con una estación base (BTS, Base Transceiver Station – estación base transceptora).",
+        "Varias estaciones base se conectan a un MSC (Mobile Switching Center – centro de conmutación móvil)."
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Reutilización de frecuencias",
+      "imagen": "6.png",
+      "video": "06.mp4",
+      "bullets": [
+        "El espectro radioeléctrico es limitado y regulado.",
+        "Las mismas frecuencias se reutilizan en celdas suficientemente alejadas.",
+        "Patrones de reutilización evitan interferencia entre celdas vecinas.",
+        "Permite aumentar la capacidad sin necesitar más espectro."
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Ventajas del diseño celular",
+      "imagen": "7.png",
+      "video": "07.mp4",
+      "bullets": [
+        "Atiende a muchos más usuarios que los sistemas sin celdas.",
+        "Reduce la potencia de transmisión en móviles y estaciones base.",
+        "Logra cobertura continua y permite escalar agregando nuevas celdas."
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Arquitectura general del sistema",
+      "imagen": "8.png",
+      "video": "8.mp4",
+      "bullets": [
+        "MS (Mobile Station – estación móvil): terminal del usuario.",
+        "BTS (estación base transceptora): se comunica por radio con los móviles.",
+        "BSC (Base Station Controller – controlador de estaciones base): coordina varias BTS.",
+        "MSC (centro de conmutación móvil): enruta llamadas y conecta con la PSTN (red telefónica pública conmutada)."
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Flujo básico de comunicación",
+      "imagen": "9.png",
+      "video": "9.mp4",
+      "bullets": [
+        "El móvil transmite a la BTS de la celda actual.",
+        "La BTS envía la señal al BSC, que gestiona canales y posibles handoffs.",
+        "El BSC se conecta al MSC, que decide el enrutamiento hacia otro móvil o la PSTN.",
+        "Todo el proceso es transparente para el usuario."
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Registro y localización del usuario",
+      "imagen": "10.png",
+      "video": "10.mp4",
+      "bullets": [
+        "Al encenderse, el móvil se registra en la BTS con mejor señal.",
+        "El sistema actualiza la base de datos con la ubicación del abonado.",
+        "Este registro permite localizar y paginar al usuario ante una llamada entrante."
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Proceso de handoff",
+      "imagen": "11.png",
+      "video": "11.mp4",
+      "bullets": [
+        "Handoff: traspaso de una llamada de una celda a otra mientras el usuario se mueve.",
+        "La red compara la calidad de señal entre celdas vecinas.",
+        "El MSC ordena el cambio de BTS y de canal.",
+        "El cambio ocurre en cientos de milisegundos y debe ser imperceptible para el usuario."
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Tipos de canales en el sistema",
+      "imagen": "12.png",
+      "video": null,
+      "bullets": [
+        "Canales de control: señalización y mensajes de gestión.",
+        "Canales de radiollamada (paging): avisos de llamadas entrantes.",
+        "Canales de acceso: solicitudes de establecimiento de llamadas.",
+        "Canales de tráfico: transportan voz o datos del usuario."
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Primera generación (1G) – Visión general",
+      "imagen": "13.png",
+      "video": null,
+      "bullets": [
+        "1G introduce el uso de celdas, pero la voz sigue siendo analógica.",
+        "Ejemplo: AMPS (Advanced Mobile Phone System).",
+        "Utiliza FDMA: cada llamada ocupa un canal de frecuencia exclusivo.",
+        "Limitaciones: baja capacidad, poca seguridad y calidad de voz variable."
+      ]
+    },
+    {
+      "id": 14,
+      "title": "1G – Espectro y canales (AMPS)",
+      "imagen": "14.png",
+      "video": null,
+      "bullets": [
+        "Bandas separadas para enlace ascendente y descendente.",
+        "Cada llamada usa un canal dúplex (par de frecuencias).",
+        "Parte de los canales se reserva para control y paginación.",
+        "Número limitado de canales por celda: riesgo de saturación en zonas densas."
+      ]
+    },
+    {
+      "id": 15,
+      "title": "1G – Funcionamiento y limitaciones",
+      "imagen": "15.png",
+      "video": null,
+      "bullets": [
+        "El móvil se registra por un canal de control y solicita llamadas por un canal de acceso.",
+        "El MSC asigna canales de voz disponibles en la celda.",
+        "Las transmisiones analógicas sin cifrado permiten escuchar o clonar teléfonos.",
+        "Resuelve movilidad, pero no seguridad ni eficiencia en el uso del espectro."
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Segunda generación (2G) – Visión general",
+      "imagen": "16.png",
+      "video": null,
+      "bullets": [
+        "2G introduce la digitalización de la voz.",
+        "Estándar principal: GSM.",
+        "Combina FDMA y TDMA: varias llamadas comparten una misma frecuencia en distintas ranuras de tiempo.",
+        "Incorpora autenticación y cifrado, mejorando la seguridad."
+      ]
+    },
+    {
+      "id": 17,
+      "title": "2G – GSM, HLR y VLR",
+      "imagen": "17.png",
+      "video": null,
+      "bullets": [
+        "HLR (Home Location Register – registro de ubicación principal): datos permanentes del abonado.",
+        "VLR (Visitor Location Register – registro de ubicación visitante): ubicación actual del abonado en un área.",
+        "El esquema HLR/VLR permite roaming entre áreas y operadores.",
+        "La arquitectura sigue basada en BTS, BSC y MSC."
+      ]
+    },
+    {
+      "id": 18,
+      "title": "2G – Servicios y evolución",
+      "imagen": "18.png",
+      "video": null,
+      "bullets": [
+        "Mejora de calidad de voz y servicio de SMS (Short Message Service).",
+        "Primeros servicios de datos de baja velocidad.",
+        "Extensiones GPRS y EDGE: conmutación de paquetes y mayores velocidades.",
+        "2G consolida el móvil como herramienta cotidiana, segura y eficiente."
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Tercera generación (3G) – Visión general",
+      "imagen": "19.png",
+      "video": null,
+      "bullets": [
+        "3G se diseña para soportar voz y datos de banda ancha.",
+        "Estándares principales: UMTS/WCDMA y CDMA2000.",
+        "Velocidades desde cientos de kbps hasta varios Mbps.",
+        "Habilita navegación completa, videollamadas y servicios multimedia."
+      ]
+    },
+    {
+      "id": 20,
+      "title": "3G – Acceso múltiple y arquitectura",
+      "imagen": "20.png",
+      "video": null,
+      "bullets": [
+        "Acceso múltiple basado en CDMA de banda ancha.",
+        "Todos los usuarios comparten la misma banda, diferenciados por códigos.",
+        "Aparecen Nodo B (similar a BTS) y RNC (Radio Network Controller).",
+        "Mayor integración con redes de paquetes IP."
+      ]
+    },
+    {
+      "id": 21,
+      "title": "3G – Servicios habilitados",
+      "imagen": "21.png",
+      "video": null,
+      "bullets": [
+        "Banda ancha móvil: videollamadas, streaming, aplicaciones avanzadas.",
+        "Impulsa el surgimiento de los smartphones.",
+        "Mecanismos de handoff más refinados, incluyendo traspasos suaves en CDMA."
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Comparación de generaciones 1G–2G–3G",
+      "imagen": "22.png",
+      "video": null,
+      "bullets": [
+        "1G: voz analógica, sin cifrado, baja capacidad, pocos servicios.",
+        "2G: voz digital, SMS, mayor seguridad y primeros datos móviles.",
+        "3G: voz y datos de alta velocidad, servicios multimedia y banda ancha móvil.",
+        "Cada generación resuelve limitaciones de la anterior."
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Desafíos técnicos del sistema celular",
+      "imagen": "23.png",
+      "video": null,
+      "bullets": [
+        "Gestión de interferencia entre celdas y usuarios simultáneos.",
+        "Planificación del espectro y tamaño de celdas según demanda.",
+        "Garantizar handoffs rápidos y fiables en alta movilidad.",
+        "Mantener seguridad, autenticación y confidencialidad de las comunicaciones."
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Aportes del sistema de telefonía móvil",
+      "imagen": "24.png",
+      "video": null,
+      "bullets": [
+        "Democratiza el acceso a la comunicación independiente de la ubicación.",
+        "Sirve de base para tecnologías posteriores como 4G y 5G.",
+        "Integra voz y datos en una plataforma unificada.",
+        "Impulsa la economía digital y nuevos modelos de negocio."
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Conclusiones generales",
+      "imagen": null,
+      "video": null,
+      "bullets": [
+        "El sistema de telefonía móvil es un ejemplo completo de diseño de la capa física.",
+        "Celdas, reutilización de espectro y handoff permiten movilidad continua.",
+        "La evolución de 1G a 3G muestra la convergencia digital de voz y datos."
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Reflexión desde la gestión de sistemas",
+      "imagen": null,
+      "video": null,
+      "bullets": [
+        "Comprender el sistema móvil revela la complejidad técnica de un servicio cotidiano.",
+        "Permite valorar planificación, estandarización y escalabilidad de las redes.",
+        "Es base para analizar críticamente tecnologías móviles actuales y futuras."
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Evolución posterior: 4G",
+      "imagen": "27.png",
+      "video": null,
+      "bullets": [
+        "4G se diseña como arquitectura totalmente basada en conmutación de paquetes.",
+        "Uso de IP de extremo a extremo.",
+        "Estándar predominante: LTE (Long Term Evolution).",
+        "Ofrece banda ancha móvil con altas velocidades y baja latencia."
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Evolución posterior: 5G",
+      "imagen": "28.png",
+      "video": "28.mp4",
+      "bullets": [
+        "5G busca mayor velocidad, baja latencia y masiva cantidad de dispositivos conectados.",
+        "Habilita IoT a gran escala, vehículos conectados y aplicaciones casi en tiempo real.",
+        "Mantiene la lógica de red celular y reutilización de espectro.",
+        "Incorpora nuevas bandas y técnicas como MIMO masivo."
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Referencias Bibliográficas",
+      "imagen": null,
+      "video": null,
+      "bullets": [
+        "Tanenbaum, A. S., & Wetherall, D. (2011). Comunicaciones y redes de computadores. Pearson Educación."
+      ]
+    },
+    {
+      "id": 30,
+      "title": "¡Muchas Gracias por su Atención!",
+      "imagen": null,
+      "video": null,
+      "bullets": []
+    }
+  ]
+}
