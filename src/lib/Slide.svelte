@@ -32,6 +32,7 @@
   $: imageUrl = hasImage ? new URL(`../assets/${slide.imagen}`, import.meta.url).href : null;
   $: hasVideo = slide.video !== null;
   $: videoUrl = hasVideo ? new URL(`../assets/video/${slide.video}`, import.meta.url).href : null;
+  const defaultCaptionsUrl = new URL('../assets/video/captions/default.vtt', import.meta.url).href;
   
   let imageElement;
   let showVideoModal = false;
@@ -229,6 +230,13 @@
         controls
         autoplay
       >
+        <track
+          kind="captions"
+          src={defaultCaptionsUrl}
+          srclang="es"
+          label="Subtítulos en español"
+          default
+        />
         Tu navegador no soporta el elemento de video.
       </video>
     </div>
